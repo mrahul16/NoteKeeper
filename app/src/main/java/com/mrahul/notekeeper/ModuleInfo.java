@@ -2,11 +2,9 @@ package com.mrahul.notekeeper;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.support.annotation.NonNull;
 
-/**
- * Created by Jim.
- */
-
+@SuppressWarnings("WeakerAccess")
 public final class ModuleInfo implements Parcelable {
     private final String mModuleId;
     private final String mTitle;
@@ -44,6 +42,7 @@ public final class ModuleInfo implements Parcelable {
         mIsComplete = complete;
     }
 
+    @NonNull
     @Override
     public String toString() {
         return mTitle;

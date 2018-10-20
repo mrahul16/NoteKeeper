@@ -2,11 +2,9 @@ package com.mrahul.notekeeper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
-/**
- * Created by Jim.
- */
-
+@SuppressWarnings("WeakerAccess")
 public class DataManager {
     private static DataManager ourInstance = null;
 
@@ -99,39 +97,39 @@ public class DataManager {
         final DataManager dm = getInstance();
 
         CourseInfo course = dm.getCourse("android_intents");
-        course.getModule("android_intents_m01").setComplete(true);
-        course.getModule("android_intents_m02").setComplete(true);
-        course.getModule("android_intents_m03").setComplete(true);
+        Objects.requireNonNull(course.getModule("android_intents_m01")).setComplete(true);
+        Objects.requireNonNull(course.getModule("android_intents_m02")).setComplete(true);
+        Objects.requireNonNull(course.getModule("android_intents_m03")).setComplete(true);
         mNotes.add(new NoteInfo(course, "Dynamic intent resolution",
                 "Wow, intents allow components to be resolved at runtime"));
         mNotes.add(new NoteInfo(course, "Delegating intents",
                 "PendingIntents are powerful; they delegate much more than just a component invocation"));
 
         course = dm.getCourse("android_async");
-        course.getModule("android_async_m01").setComplete(true);
-        course.getModule("android_async_m02").setComplete(true);
+        Objects.requireNonNull(course.getModule("android_async_m01")).setComplete(true);
+        Objects.requireNonNull(course.getModule("android_async_m02")).setComplete(true);
         mNotes.add(new NoteInfo(course, "Service default threads",
                 "Did you know that by default an Android Service will tie up the UI thread?"));
         mNotes.add(new NoteInfo(course, "Long running operations",
                 "Foreground Services can be tied to a notification icon"));
 
         course = dm.getCourse("java_lang");
-        course.getModule("java_lang_m01").setComplete(true);
-        course.getModule("java_lang_m02").setComplete(true);
-        course.getModule("java_lang_m03").setComplete(true);
-        course.getModule("java_lang_m04").setComplete(true);
-        course.getModule("java_lang_m05").setComplete(true);
-        course.getModule("java_lang_m06").setComplete(true);
-        course.getModule("java_lang_m07").setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m01")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m02")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m03")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m04")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m05")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m06")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_lang_m07")).setComplete(true);
         mNotes.add(new NoteInfo(course, "Parameters",
                 "Leverage variable-length parameter lists"));
         mNotes.add(new NoteInfo(course, "Anonymous classes",
                 "Anonymous classes simplify implementing one-use types"));
 
         course = dm.getCourse("java_core");
-        course.getModule("java_core_m01").setComplete(true);
-        course.getModule("java_core_m02").setComplete(true);
-        course.getModule("java_core_m03").setComplete(true);
+        Objects.requireNonNull(course.getModule("java_core_m01")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_core_m02")).setComplete(true);
+        Objects.requireNonNull(course.getModule("java_core_m03")).setComplete(true);
         mNotes.add(new NoteInfo(course, "Compiler options",
                 "The -jar option isn't compatible with with the -cp option"));
         mNotes.add(new NoteInfo(course, "Serialization",
