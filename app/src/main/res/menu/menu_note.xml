@@ -4,11 +4,20 @@
     tools:context="com.mrahul.notekeeper.NoteActivity">
     <item
         android:id="@+id/action_cancel"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:orderInCategory="100"
-        android:title="@string/action_cancel" />
+        android:title="@string/action_cancel"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_next"
+        android:icon="@android:drawable/ic_media_next"
+        android:orderInCategory="101"
+        android:title="@string/action_next"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
     <item
         android:id="@+id/action_send_mail"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         android:title="@string/action_send_email"
         app:showAsAction="never" />
 </menu>
