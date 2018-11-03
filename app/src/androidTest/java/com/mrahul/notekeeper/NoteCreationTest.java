@@ -1,17 +1,15 @@
 package com.mrahul.notekeeper;
 
-import android.support.test.espresso.DataInteraction;
-import android.support.test.espresso.ViewAction;
-import android.support.test.espresso.ViewInteraction;
-import android.support.test.espresso.action.ViewActions;
-import android.support.test.espresso.assertion.ViewAssertions;
-import android.support.test.espresso.matcher.ViewMatchers;
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
-import android.view.View;
+import androidx.test.espresso.DataInteraction;
+import androidx.test.espresso.ViewAction;
+import androidx.test.espresso.ViewInteraction;
+import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.assertion.ViewAssertions;
+import androidx.test.espresso.matcher.ViewMatchers;
+import androidx.test.rule.ActivityTestRule;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.hamcrest.Matchers;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
@@ -19,7 +17,7 @@ import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
 
-import android.support.test.espresso.Espresso;
+import androidx.test.espresso.Espresso;
 
 import java.util.List;
 
