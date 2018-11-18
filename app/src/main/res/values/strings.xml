@@ -4,8 +4,8 @@
     <string name="title_activity_note">Edit Note</string>
     <string name="action_cancel">Cancel</string>
     <string name="action_send_email">Send as Email</string>
-    <string name="text_note_title">Note Title</string>
-    <string name="text_note_text">Note Text</string>
+    <string name="note_title_hint">Note Title</string>
+    <string name="note_text_hint">Note Text</string>
     <string name="action_next">Next</string>
     <string name="title_activity_main">NoteKeeper</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -18,4 +18,6 @@
     <string name="nav_share">Share</string>
     <string name="nav_send">Send</string>
     <string name="nav_subtitle_communicate">Communicate</string>
+    <string name="nav_share_message">Nothing to share</string>
+    <string name="nav_send_message">Send</string>
 </resources>
